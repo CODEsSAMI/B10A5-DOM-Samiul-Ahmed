@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+
+    <!-- adding font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- adding tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- adding daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- common styles -->
+    <style>
+        .font-title {
+            font-family: 'Lexend';
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .font-regular {
+            font-family: 'Lexend';
+            font-size: 16px;
+        }
+
+        .button-green {
+            display: flex;
+            align-items: center;
+            background-color: #B5F45F;
+            padding: 16px 32px;
+            border-radius: 8px;
+            height: 48px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .button-green:hover {
+            background-color: #B4F880;
+        }
+
+        .button-white {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            height: 48px;
+            font-size: 20px;
+            border: 1px solid rgba(17, 17, 17, 0.30);
+        }
+
+        .button-white:hover {
+            background-color: #D3D3D3;
+        }
+
+
+        .button-grey {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(17, 17, 17, 0.05);
+            padding: 10px 16px;
+            border-radius: 8px;
+            height: 44px;
+            width: auto;
+            font-size: 16px;
+            gap: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- header -->
+    <header
+        class=" flex justify-around py-4 font-title max-w-[100%] mx-auto sticky top-0 bg-[#f7f3ebd5] backdrop-blur-xl">
+
+        <!-- navbar start -->
+        <div class="">
+            <a href="./blog.html">
+                <button class="button-green">Blog</button></a>
+        </div>
+
+        <!-- center logo -->
+        <div class="flex gap-4 items-center">
+            <img src="./assets/logo.png" alt="" class="h-12">
+            <p class="hidden md:flex">Donate Bangladesh</p>
+        </div>
+
+        <!-- navbar end -->
+        <div class="flex gap-3 items-center">
+            <img src="./assets/coin.png" alt="">
+
+            <div class="flex min-w-20 justify-between">
+                <div class="balance font-regular">5500</div>
+                <div class="font-regular">BDT</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="font-title">
+            Important FAQ:
+        </h1>
+    </main>
+</body>
+
+</html>

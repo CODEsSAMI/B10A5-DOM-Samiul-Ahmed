@@ -93,7 +93,7 @@
 
   <!-- header -->
   <header
-    class=" flex justify-around py-4 font-title max-w-[100%] mx-auto sticky top-0 bg-[#F8F5EE]">
+    class=" flex justify-around py-4 font-title max-w-[100%] mx-auto sticky top-0 bg-[#f8f5eeec] backdrop-blur-3xl">
 
     <!-- navbar start -->
     <div class="">
@@ -126,13 +126,14 @@
   <main class="bg-white  mx-auto flex flex-col justify-center items-center">
     <!-- main button -->
     <div
-      class="flex justify-center gap-4 items-center sticky top-20 `1bg-[#ffffffde] backdrop-blur-xl w-[100%] pt-12 pb-12 shadow-md">
-      <button class="button-green">donation</button>
-      <button class="button-white">History</button>
+      class="flex justify-center gap-4 items-center sticky top-20 bg-[#ffffffde] backdrop-blur-xl w-[100%] py-10 shadow-md">
+      <button id="donation-button"  class="button-green">donation</button>
+
+      <button id="history-button"  class="button-white">History</button>
     </div>
 
     <!-- all cards -->
-    <div class=" py-20 cards-together flex flex-col justify-center items-center gap-8 w-[100%]">
+    <div id="card-section" class=" py-20 cards-together flex flex-col justify-center items-center gap-8 w-[100%]">
 
       <!-- main card 1 noakhali-->
       <div class="flex flex-col md:flex-row gap-8 max-w-6xl border-2 rounded-xl p-1 md:p-8 w-[100%]">
@@ -250,7 +251,7 @@
     </div>
 
     <!-- history  -->
-    <div class="hidden">
+    <div id="history-section" class="">
 
     </div>
 
@@ -261,7 +262,7 @@
 
 
   <!-- JavaScript -->
-  <script src="./JS/donate.js"></script>
+  <script src="./JS/functions.js"></script>
   <script src="./JS/index.js"></script>
 </body>
 

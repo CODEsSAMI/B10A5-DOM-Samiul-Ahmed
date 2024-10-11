@@ -1,34 +1,30 @@
-document.getElementById("noakhali-button").addEventListener("click", function (event) {
-    event.preventDefault;
-    console.log("noakhali got help")
-
-    let noakhaliInput = parseInt(document.getElementById("noakhali-input").value);
-    console.log("noakhali input:", noakhaliInput) ;
-
+// cards calculation
+function cardCalculation(inputID, outputID){
+    let  inputMoney = parseInt(document.getElementById(inputID).value);
     let currentAmount = parseInt(document.getElementById("current-amount").innerText);
-    console.log("current amount", currentAmount) ;
+    let outputMoney = parseInt(document.getElementById(outputID).innerText);
 
 
-    if(noakhaliInput <= currentAmount && noakhaliInput!=0){
-        let noakhaliOutput = parseInt(document.getElementById("noakhali-output").innerText) + noakhaliInput;
-        console.log("noakhali got: ", noakhaliOutput)
+    if(inputMoney <= currentAmount && inputMoney != 0){
+        outputMoney += inputMoney;
 
-        document.getElementById("noakhali-output").innerText = noakhaliOutput;
-
-        document.getElementById("current-amount").innerText = currentAmount - noakhaliInput;
-
-
+        return outputMoney;
     }
     else{
-        alert("invalid input")
+        alert("invalid input");
     }
-})
-
-// cards calculation
-function calculation(id){
-
-    const money = parseInt(document.getElementById(id).innerText);
-    return money;
 }
 
 // left amount calculation
+function leftMoney(currentMoneyID, inputID){
+    let  inputMoney = parseInt(document.getElementById(inputID).value);
+    let currentAmount = parseInt(document.getElementById(currentMoneyID).innerText);
+
+    if(inputMoney <= currentAmount && inputMoney != 0){
+        currentAmount -= inputMoney;
+        return currentAmount;
+    }
+    else{
+        return currentAmount;
+    }
+}

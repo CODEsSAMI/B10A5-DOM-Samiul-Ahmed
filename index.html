@@ -29,63 +29,8 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- common styles -->
-  <style>
-    .font-title {
-      font-family: 'Lexend';
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .font-regular {
-      font-family: 'Lexend';
-      font-size: 16px;
-    }
-
-    .button-green {
-      display: flex;
-      align-items: center;
-      background-color: #B5F45F;
-      padding: 16px 32px;
-      border-radius: 8px;
-      height: 48px;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .button-green:hover {
-      background-color: #B4F880;
-    }
-
-    .button-white {
-      display: flex;
-      align-items: center;
-      background-color: white;
-      padding: 16px 32px;
-      border-radius: 8px;
-      height: 48px;
-      font-size: 20px;
-      border: 1px solid rgba(17, 17, 17, 0.30);
-    }
-
-    .button-white:hover {
-      background-color: #D3D3D3;
-    }
-
-
-    .button-grey {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(17, 17, 17, 0.05);
-      padding: 10px 16px;
-      border-radius: 8px;
-      height: 44px;
-      width: auto;
-      font-size: 16px;
-      gap: 8px;
-    }
-  </style>
+  <!-- adding styles -->
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 
@@ -105,7 +50,7 @@
     <!-- center logo -->
     <div class="flex gap-4 items-center">
       <a href="./index.html">
-      <img src="./assets/logo.png" alt="" class="h-12">
+        <img src="./assets/logo.png" alt="" class="h-12">
       </a>
       <p id="logo-name" class="hidden md:flex">Donate Bangladesh</p>
     </div>
@@ -127,13 +72,13 @@
     <!-- main button -->
     <div
       class="flex justify-center gap-4 items-center sticky top-20 bg-[#ffffffde] backdrop-blur-xl w-[100%] py-10 shadow-md">
-      <button id="donation-button"  class="button-green">donation</button>
+      <button id="donation-button" class="button-green">donation</button>
 
-      <button id="history-button"  class="button-white">History</button>
+      <button id="history-button" class="button-white">History</button>
     </div>
 
     <!-- all cards -->
-    <div id="card-section" class=" py-20 cards-together flex flex-col justify-center items-center gap-8 w-[100%]">
+    <div id="card-section" class=" py-20  flex flex-col justify-center items-center gap-8 w-[100%]">
 
       <!-- main card 1 noakhali-->
       <div class="flex flex-col md:flex-row gap-8 max-w-6xl border-2 rounded-xl p-1 md:p-8 w-[100%]">
@@ -251,7 +196,10 @@
     </div>
 
     <!-- history  -->
-    <div id="history-section" class="">
+    <div id="history-section"
+      class="border-2 border-red-500 py-20  flex flex-col justify-center items-center gap-8 w-[100%]">
+      <p class="flex flex-col md:flex-row gap-8 max-w-6xl border-2 rounded-xl p-1 md:p-8 w-[100%]">
+        hello</p>
 
     </div>
 

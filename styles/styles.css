@@ -1,0 +1,53 @@
+.font-title {
+    font-family: 'Lexend';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.font-regular {
+    font-family: 'Lexend';
+    font-size: 16px;
+}
+
+.button-green {
+    display: flex;
+    align-items: center;
+    background-color: #B5F45F;
+    padding: 16px 32px;
+    border-radius: 8px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.button-green:hover {
+    background-color: #B4F880;
+}
+
+.button-white {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    height: 48px;
+    font-size: 20px;
+    border: 1px solid rgba(17, 17, 17, 0.30);
+}
+
+.button-white:hover {
+    background-color: #D3D3D3;
+}
+
+
+.button-grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 17, 0.05);
+    padding: 10px 16px;
+    border-radius: 8px;
+    height: 44px;
+    width: auto;
+    font-size: 16px;
+    gap: 8px;
+}

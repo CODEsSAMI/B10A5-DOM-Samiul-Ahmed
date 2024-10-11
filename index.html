@@ -93,7 +93,7 @@
 
   <!-- header -->
   <header
-    class=" flex justify-around py-4 font-title max-w-[100%] mx-auto sticky top-0 bg-[#f7f3ebd5] backdrop-blur-xl">
+    class=" flex justify-around py-4 font-title max-w-[100%] mx-auto sticky top-0 bg-[#F8F5EE]">
 
     <!-- navbar start -->
     <div class="">
@@ -107,7 +107,7 @@
       <a href="./index.html">
       <img src="./assets/logo.png" alt="" class="h-12">
       </a>
-      <p class="hidden md:flex">Donate Bangladesh</p>
+      <p id="logo-name" class="hidden md:flex">Donate Bangladesh</p>
     </div>
 
 
@@ -116,8 +116,8 @@
       <img src="./assets/coin.png" alt="">
 
       <div class="flex min-w-20 justify-between">
-        <div class="balance font-regular">5500</div>
-        <div class="font-regular">BDT</div>
+        <div id="current-amount" class="font-regular">5500</div>
+        <div id="" class="font-regular">BDT</div>
       </div>
     </div>
   </header>
@@ -126,14 +126,15 @@
   <main class="bg-white  mx-auto flex flex-col justify-center items-center">
     <!-- main button -->
     <div
-      class="flex justify-center gap-4 items-center sticky top-20 bg-[#ffffffc0] backdrop-blur-xl w-[100%] pt-12 pb-12 shadow-md">
+      class="flex justify-center gap-4 items-center sticky top-20 `1bg-[#ffffffde] backdrop-blur-xl w-[100%] pt-12 pb-12 shadow-md">
       <button class="button-green">donation</button>
       <button class="button-white">History</button>
     </div>
 
     <!-- all cards -->
     <div class=" py-20 cards-together flex flex-col justify-center items-center gap-8 w-[100%]">
-      <!-- main card 1 -->
+
+      <!-- main card 1 noakhali-->
       <div class="flex flex-col md:flex-row gap-8 max-w-6xl border-2 rounded-xl p-1 md:p-8 w-[100%]">
         <!-- card image -->
         <img src="./assets/noakhali.png" alt="" class="rounded-md">
@@ -144,7 +145,8 @@
           <!-- output amount -->
           <div class="button-grey ">
             <img src="./assets/coin.png" alt="">
-            <div>2000</div>
+            <!-- noakhali-output -->
+            <div id="noakhali-output">0</div>
             <div>BDT</div>
           </div>
 
@@ -160,12 +162,16 @@
 
           <!-- input amount -->
           <div class="flex flex-col gap-4">
-            <input type="text" placeholder="Write donation Amount" class="button-white">
-
-            <button class="button-green justify-center">Donate Now</button>
+            <!-- noakhali-input -->
+            <input id="noakhali-input" type="text" placeholder="Write donation Amount" class="button-white">
+            <!-- noakhali-button -->
+            <button id="noakhali-button" class="button-green justify-center">Donate Now</button>
           </div>
         </div>
       </div>
+
+
+
 
       <!-- main card 2 -->
       <div class="flex flex-col md:flex-row gap-8 max-w-6xl border-2 rounded-xl p-1 md:p-8 w-[100%]">
@@ -177,7 +183,8 @@
 
           <div class="output button-grey ">
             <img src="./assets/coin.png" alt="">
-            <div>2000</div>
+            <!-- feni-output -->
+            <div id="feni-output">0</div>
             <div>BDT</div>
           </div>
 
@@ -193,12 +200,17 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <input type="text" placeholder="Write donation Amount" class="button-white">
-
-            <button class="button-green justify-center">Donate Now</button>
+            <!-- feni-input -->
+            <input id="feni-input" type="text" placeholder="Write donation Amount" class="button-white">
+            <!-- feni-button -->
+            <button id="feni-button" class="button-green justify-center">Donate Now</button>
           </div>
         </div>
       </div>
+
+
+
+
 
       <!-- main card 3 -->
       <div class="flex flex-col md:flex-row gap-8 max-w-6xl border-2 rounded-xl p-1 md:p-8 w-[100%]">
@@ -210,7 +222,8 @@
 
           <div class="output button-grey ">
             <img src="./assets/coin.png" alt="">
-            <div>2000</div>
+            <!-- quota-output -->
+            <div id="quota-output">0</div>
             <div>BDT</div>
           </div>
 
@@ -227,9 +240,10 @@
           </div>
 
           <div class="flex flex-col gap-4">
-            <input type="text" placeholder="Write donation Amount" class="button-white">
-
-            <button class="button-green justify-center">Donate Now</button>
+            <!-- quota-input -->
+            <input id="quota-input" type="text" placeholder="Write donation Amount" class="button-white">
+            <!-- quota-button -->
+            <button id="quota-button" class="button-green justify-center">Donate Now</button>
           </div>
         </div>
       </div>
@@ -245,6 +259,9 @@
   <!-- footer -->
   <footer class="h-36 bg-[#f7f3ebd5]"></footer>
 
+
+  <!-- JavaScript -->
+  <script src="./JS/donate.js"></script>
   <script src="./JS/index.js"></script>
 </body>
 

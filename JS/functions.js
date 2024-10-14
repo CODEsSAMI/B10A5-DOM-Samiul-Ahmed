@@ -37,5 +37,25 @@ function showSection(sectionID) {
     document.getElementById("history-section").classList.add("hidden");
 
     document.getElementById(sectionID).classList.remove("hidden");
+}
+
+// transaction history
+function transactionHistory(cardAmount, cardName) {
+    const div = document.createElement("div");
+
+    let input = document.getElementById(cardAmount).value;
+
+    let cardID = document.getElementById(cardName).innerText;
+
+    if (input > 0 ) {
+        div.classList.add("border-2", "rounded-xl", "p-4", "w-[100%]");
+
+        div.innerHTML = `<p class= "font-bold"> ${input} Taka is donated for ${cardID} </p>
+    <p> Date: ${new Date().toLocaleString()} </p>
+    `;
+
+        document.getElementById("history-lists").appendChild(div);
+
+    }
 
 }

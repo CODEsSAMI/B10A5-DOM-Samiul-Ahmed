@@ -41,13 +41,13 @@ function showSection(sectionID) {
 
 // transaction history
 function transactionHistory(cardAmount, cardName) {
-    const div = document.createElement("div");
-
     let input = document.getElementById(cardAmount).value;
 
     let cardID = document.getElementById(cardName).innerText;
 
-    if (input > 0 ) {
+    if (input > 0) {
+        const div = document.createElement("div");
+
         div.classList.add("border-2", "rounded-xl", "p-4", "w-[100%]");
 
         div.innerHTML = `<p class= "font-bold"> ${input} Taka is donated for ${cardID} </p>

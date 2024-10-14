@@ -44,12 +44,25 @@ document.getElementById("quota-button").addEventListener("click", function (even
 
 // donation button 
 document.getElementById("donation-button").addEventListener("click", function () {
-    showSection("card-section");
+    
+    document.getElementById("donation-button").classList.remove("button-white");
+    document.getElementById("donation-button").classList.add("button-green");
 
+    document.getElementById("history-button").classList.remove("button-green");
+    document.getElementById("history-button").classList.add("button-white");
+    
+    showSection("card-section");
 })
 
 // history button
 document.getElementById("history-button").addEventListener("click", function () {
+
+    document.getElementById("history-button").classList.remove("button-white");
+    document.getElementById("history-button").classList.add("button-green");
+
+    document.getElementById("donation-button").classList.remove("button-green");
+    document.getElementById("donation-button").classList.add("button-white");
+    
     showSection("history-section");
 
 })

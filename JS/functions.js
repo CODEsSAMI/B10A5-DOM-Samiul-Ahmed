@@ -1,32 +1,43 @@
 // cards calculation
 function cardCalculation(inputID, outputID) {
-    let inputMoney = parseInt(document.getElementById(inputID).value);
+
+    let inputMoney = document.getElementById(inputID).value;
 
     let currentAmount = parseInt(document.getElementById("current-amount").innerText);
 
     let outputMoney = parseInt(document.getElementById(outputID).innerText);
 
-    if (inputMoney <= currentAmount && inputMoney != 0) {
+
+    if (inputMoney <= currentAmount && inputMoney > 0 && !isNaN(inputMoney)) {
+
+        inputMoney = parseInt(document.getElementById(inputID).value);
+
         outputMoney += inputMoney;
+
+        alert("congratulation!!! donation was successful");
 
         return outputMoney;
     }
     else {
-        alert("invalid input");
+        alert("invalid amount");
+        return outputMoney += 0;
     }
 }
 
 // left amount calculation
 function leftMoney(currentMoneyID, inputID) {
-    let inputMoney = parseInt(document.getElementById(inputID).value);
+    let inputMoney = document.getElementById(inputID).value;
 
     let currentAmount = parseInt(document.getElementById(currentMoneyID).innerText);
 
-    if (inputMoney <= currentAmount && inputMoney != 0) {
+    if (inputMoney <= currentAmount && inputMoney > 0 && !isNaN(inputMoney)) {
+        inputMoney = parseInt(document.getElementById(inputID).value);
+
         currentAmount -= inputMoney;
         return currentAmount;
     }
     else {
+        currentAmount -= 0;
         return currentAmount;
     }
 }

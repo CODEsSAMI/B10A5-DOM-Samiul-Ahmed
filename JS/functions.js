@@ -14,7 +14,13 @@ function cardCalculation(inputID, outputID) {
 
         outputMoney += inputMoney;
 
-        alert("congratulation!!! donation was successful");
+        // modal work 
+        document.getElementById("my_modal_8").classList.add("modal-open");
+
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById("my_modal_8").classList.remove('modal-open');
+          });
+        
 
         return outputMoney;
     }

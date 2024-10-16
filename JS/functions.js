@@ -1,5 +1,5 @@
 // cards calculation
-function cardCalculation(inputID, outputID) {
+function cardCalculation(inputID, outputID, cardName) {
 
     let inputMoney = document.getElementById(inputID).value;
 
@@ -20,6 +20,9 @@ function cardCalculation(inputID, outputID) {
         document.getElementById('close-modal').addEventListener('click', function() {
             document.getElementById("my_modal_8").classList.remove('modal-open');
           });
+
+        //history add
+        transactionHistory(inputID, cardName);
         
 
         return outputMoney;
@@ -62,7 +65,7 @@ function transactionHistory(cardAmount, cardName) {
 
     let cardID = document.getElementById(cardName).innerText;
 
-    if (input > 0) {
+   // if (input > 0) {
         const div = document.createElement("div");
 
         div.classList.add("border-2", "rounded-xl", "p-4", "w-[100%]");
@@ -73,6 +76,6 @@ function transactionHistory(cardAmount, cardName) {
 
         document.getElementById("history-lists").appendChild(div);
 
-    }
+ //   }
 
 }

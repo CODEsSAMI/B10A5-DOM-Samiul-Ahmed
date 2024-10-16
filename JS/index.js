@@ -2,11 +2,11 @@
 document.getElementById("noakhali-button").addEventListener("click", function (event) {
     event.preventDefault;
 
-    document.getElementById("noakhali-output").innerText = cardCalculation("noakhali-input", "noakhali-output");
+    document.getElementById("noakhali-output").innerText = cardCalculation("noakhali-input", "noakhali-output", "Noakhali-donation");
 
     document.getElementById("current-amount").innerText = leftMoney("current-amount", "noakhali-input");
 
-    transactionHistory("noakhali-input" ,"Noakhali-donation");
+   // transactionHistory("noakhali-input" ,"Noakhali-donation");
 
 })
 
@@ -24,22 +24,22 @@ document.getElementById("noakhali-button").addEventListener("click", function (e
 document.getElementById("feni-button").onclick = function (event) {
     event.preventDefault;
 
-    document.getElementById("feni-output").innerText = cardCalculation("feni-input", "feni-output");
+    document.getElementById("feni-output").innerText = cardCalculation("feni-input", "feni-output", "feni-donation");
 
     document.getElementById("current-amount").innerText = leftMoney("current-amount", "feni-input");
     
-    transactionHistory("feni-input" ,"feni-donation");
+   // transactionHistory("feni-input" ,"feni-donation");
 }
 
 // quota card
 document.getElementById("quota-button").addEventListener("click", function (event) {
     event.preventDefault;
 
-    document.getElementById("quota-output").innerText = cardCalculation("quota-input", "quota-output");
+    document.getElementById("quota-output").innerText = cardCalculation("quota-input", "quota-output", "quota-donation");
 
     document.getElementById("current-amount").innerText = leftMoney("current-amount", "quota-input");
 
-    transactionHistory("quota-input" ,"quota-donation");
+ //   transactionHistory("quota-input" ,"quota-donation");
 })
 
 // donation button 
